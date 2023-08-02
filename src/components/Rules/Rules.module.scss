@@ -1,0 +1,47 @@
+@mixin display-flex {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rules {
+    margin-top: 196px;
+
+    .title {
+        color: #ffffff;
+        font-family: 'GilroyBoldItalic';
+        font-size: 88px;
+        text-align: center;
+    }
+
+    .container {
+        @include display-flex;
+
+        color: #ffffff;
+        font-family: 'GilroyRegular';
+        font-size: 20px;
+        margin: 32px auto 0;
+        max-width: 1524px;
+
+        .rules__item {
+            .rules__img {
+                margin-bottom: 18px;
+            }
+
+            img {
+                height: 260px;
+                width: 309px;
+            }
+
+            .rules__txt {
+                text-align: center;
+            }
+
+            .rules__last {
+                margin-top: -22px;
+            }
+        }
+
+        
+    }
+}

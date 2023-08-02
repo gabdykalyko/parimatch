@@ -1,0 +1,152 @@
+.slider {
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    margin: 71px auto 0;
+    max-width: 1761px;
+
+    button {
+        background-color: unset;
+        border: none;
+        outline: none;
+    }
+
+    .prevb {
+        margin-right: 64px;
+    }
+
+    .nextb {
+        margin-left: 64px;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 346px;
+        }
+
+        .txt {
+            font-family: 'GilroyBold';
+            font-size: 33px;
+            display: inline-block;
+            margin-top: 25px;
+            position: relative;
+            text-align: center;
+        }
+    }
+
+    .close {
+        filter: blur(3px);
+
+        img {
+            width: 210px;
+        }
+    }
+
+    .far {
+        filter: blur(5px);
+
+        img {
+            width: 138px;
+        }
+    }
+
+    .info {
+        position: absolute;
+        left: 103%;
+        top: 15%;
+
+        img {
+            width: 26px;
+        }
+    }
+}
+
+.popup_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Прозрачность подложки */
+    z-index: 100;
+    /* Значение z-index может быть изменено в зависимости от вашей структуры страницы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стили для контейнера "pop-up" окна */
+.popup {
+    background-image: url('../../assets/images/popup.png');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    border-radius: 16px;
+    padding: 35px 55px;
+    position: relative;
+    width: 972px;
+
+    .title {
+        font-family: 'GilroyBold';
+        font-size: 43px;
+    }
+
+    .txt {
+        color: #D7E0E0;
+        font-size: 23px;
+        font-family: 'GilroyRegular';
+        margin-top: 15px;
+    }
+
+    table {
+        border: 2px solid #4B5F67;
+        border-radius: 11px;
+        font-family: 'GilroyRegular';
+        font-size: 18px;
+        margin-top: 14px;
+        text-align: center;
+
+        td {
+            border-bottom: 1px solid #4B5F67;
+            padding: 7px;
+            width: 235px;
+        }
+
+        .first {
+            border-right: 1px solid #4B5F67;
+        }
+    }
+
+    .infotxt {
+        color: #D7E0E0;
+        font-size: 23px;
+        font-family: 'GilroyRegular';
+        margin-top: 23px;
+    }
+
+    .closebtn {
+        cursor: pointer;
+        position: absolute;
+        top: 13px;
+        right: 15px;
+
+        img {
+            width: 32px;
+        }
+    }
+
+    .bigchest {
+        position: absolute;
+        top: 45px;
+        left: 550px;
+    }
+}
+
+.none {
+    display: none;
+}
