@@ -102,7 +102,7 @@
 .popup {
     background-image: url('../../assets/images/popup.png');
     // background-size: cover;
-    // background-repeat: no-repeat;
+    background-repeat: no-repeat;
     border-radius: 16px;
     padding: 35px 55px;
     position: relative;
@@ -204,9 +204,6 @@
 @media (max-width: 974px) {
     .slider {
         justify-content: center;
-        .chestWrapper {
-
-        }
 
         .close {
             display: none;
