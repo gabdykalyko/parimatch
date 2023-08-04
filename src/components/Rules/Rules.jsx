@@ -3,6 +3,10 @@ import first from '../../assets/images/first.png';
 import second from '../../assets/images/second.png';
 import third from '../../assets/images/third.png';
 import fourth from '../../assets/images/fourth.png';
+import firstmob from '../../assets/images/firstmob.png';
+import secondmob from '../../assets/images/secondmob.png';
+import thirdmob from '../../assets/images/thirdmob.png';
+import fourthmob from '../../assets/images/fourthmob.png';
 
 const Rules = () => {
     return (
@@ -14,6 +18,7 @@ const Rules = () => {
                 <div className={style.rules__item}>
                     <div className={style.rules__img}>
                         <img src={first} alt="" />
+                        <img className={style.imgmob} src={firstmob} alt="" />
                     </div>
                     <div className={style.rules__txt}>
                         Зарегистрируйтесь <br />
@@ -24,6 +29,7 @@ const Rules = () => {
                 <div className={style.rules__item}>
                     <div className={style.rules__img}>
                         <img src={second} alt="" />
+                        <img className={style.imgmob} src={secondmob} alt="" />
                     </div>
                     <div className={style.rules__txt}>
                         Выполняйте задания каждый <br />
@@ -34,6 +40,7 @@ const Rules = () => {
                 <div className={style.rules__item}>
                     <div className={style.rules__img}>
                         <img src={third} alt="" />
+                        <img className={style.imgmob} src={thirdmob} alt="" />
                     </div>
                     <div className={style.rules__txt}>
                         Набирайте баллы и поднимайтесь <br />
@@ -44,6 +51,7 @@ const Rules = () => {
                 <div className={style.rules__item}>
                     <div className={style.rules__img}>
                         <img src={fourth} alt="" />
+                        <img className={style.imgmob} src={fourthmob} alt="" />
                     </div>
                     <div className={`${style.rules__txt} ${style.rules__last}`}>
                         Получайте гарантированные <br/>

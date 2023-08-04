@@ -7,6 +7,10 @@
 .rules {
     margin-top: 196px;
 
+    .imgmob {
+        display: none;
+    }
+
     .title {
         color: #ffffff;
         font-family: 'GilroyBoldItalic';
@@ -43,5 +47,72 @@
         }
 
         
+    }
+}
+
+@media (max-width: 1262px) {
+    .rules {
+        .container {
+            .rules__item {
+                .rules__img {
+                    text-align: center;
+                }
+
+                img {
+                    height: 160px;
+                    width: 200px;
+                }
+            }
+            
+        }
+
+    }
+}
+
+
+@media (max-width: 974px) {
+    .rules {
+        .container {
+            flex-wrap: wrap;
+            
+        }
+
+    }
+}
+
+@media (max-width: 425px) {
+    .rules {
+        margin-top: 43px;
+
+        .container {
+            display: block;
+
+            .rules__item {
+
+                .rules__img {
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        display: none;
+                    }
+
+                    .imgmob {
+                        display: block;
+                        width: 208px;
+                    }
+                }
+
+                .rules__txt {
+                    font-size: 16px;
+                }
+            }
+        }
+        .title {
+            font-size: 36px;
+        }
+
+        
+
     }
 }

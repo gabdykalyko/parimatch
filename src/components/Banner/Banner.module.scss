@@ -1,4 +1,39 @@
 .banner {
     margin-left: 202px;
     margin-top: 63px;
+
+    .alga {
+        display: none;
+    }
+}
+
+@media (max-width: 1028px) {
+    .banner {
+        img {
+            width: 500px;
+        }
+    }
+}
+
+@media (max-width: 764px) {
+    .banner {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .banner {
+        display: flex;
+        justify-content: center;
+
+        img {
+            display: none;
+            width: 285px;
+        }
+
+        .alga {
+            display: block;
+            margin-top: 325px;
+        }
+    }
 }

@@ -10,27 +10,33 @@ import nextb from '../../assets/images/next.svg';
 import info from '../../assets/images/info.svg';
 import close from '../../assets/images/close.svg';
 import bigchest from '../../assets/images/bigchest.png';
+import bigchestmob from '../../assets/images/bigchestmob.png';
 
 const data = [
     {
         img: bronze,
-        text: 'Бронзовый сундук'
+        text: 'Бронзовый сундук',
+        textmob: 'Бронзовый'
     },
     {
         img: serebr,
-        text: 'Серебряный сундук'
+        text: 'Серебряный сундук',
+        textmob: 'Серебряный'
     },
     {
         img: gold,
-        text: 'Золотой сундук'
+        text: 'Золотой сундук',
+        textmob: 'Золотой'
     },
     {
         img: platine,
-        text: 'Платиновый сундук'
+        text: 'Платиновый сундук',
+        textmob: 'Платиновый'
     },
     {
         img: diamond,
-        text: 'Алмазный сундук'
+        text: 'Алмазный сундук',
+        textmob: 'Алмазный'
     },
 ]
 
@@ -53,8 +59,10 @@ const Slider = () => {
         });
     }
 
-    const showInfo = () => {
-        setVisible(true)
+    const showInfo = (data) => {
+        if (data.currentTarget.attributes.data.textContent === 'Золотой сундук') {
+            setVisible(true)
+        }
     }
 
     const hideInfo = () => {
@@ -76,13 +84,14 @@ const Slider = () => {
             </button>
 
             <div className={style.center}>
-                <div>
+                <div className={style.chestWrapper} onClick={showInfo} data={chests[2]?.text}>
                     <img src={chests[2].img} alt="" />
                 </div>
                 <div className={style.txt}>
-                    {chests[2]?.text}
+                    <span className={style.txtdesktop}>{chests[2]?.text}</span>
+                    <span className={style.txtmob}>{chests[2]?.textmob}</span>
 
-                    <div className={style.info} onClick={showInfo}>
+                    <div className={style.info} onClick={showInfo} data={chests[2]?.text}>
                         <img src={info} alt="" />
                     </div>
                 </div>
@@ -94,8 +103,14 @@ const Slider = () => {
                         Золотой сундук
                     </div>
                     <div className={style.txt}>
-                        Из этого сундука вы можете получить один <br />
-                        из следующих призов:
+                        <span className={style.txtformdesktop}>
+                            Из этого сундука вы можете получить один <br />
+                            из следующих призов:
+                        </span>
+                        <span className={style.txtformmob}>
+                            Из этого сундука вы можете получить один
+                            из следующих призов:
+                        </span>
                     </div>
                     <div>
                         <table>
@@ -150,9 +165,17 @@ const Slider = () => {
                         </table>
                     </div>
                     <div className={style.infotxt}>
-                        ВАЖНО - если вы выполнили квест - <br />
-                        успейте открыть сундук и забрать награду <br />
-                        до окончания акции
+                        <span className={style.infotxtdesktop}>
+                            ВАЖНО - если вы выполнили квест - <br />
+                            успейте открыть сундук и забрать награду <br />
+                            до окончания акции
+                        </span>
+
+                        <span className={style.infotxtmob}>
+                            ВАЖНО - если вы выполнили квест -
+                            успейте открыть сундук и забрать награду
+                            до окончания акции
+                        </span>
                     </div>
 
                     <div className={style.closebtn} onClick={hideInfo}>
@@ -161,6 +184,10 @@ const Slider = () => {
 
                     <div className={style.bigchest}>
                         <img src={bigchest} alt="" />
+                    </div>
+
+                    <div className={style.bigchestmob}>
+                        <img src={bigchestmob} alt="" />
                     </div>
                 </div>
             </div>

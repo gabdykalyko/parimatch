@@ -6,6 +6,14 @@
     margin: 71px auto 0;
     max-width: 1761px;
 
+    .txtmob {
+        display: none;
+    }
+
+    .nextmob {
+        display: none;
+    }
+
     button {
         background-color: unset;
         border: none;
@@ -36,6 +44,14 @@
             margin-top: 25px;
             position: relative;
             text-align: center;
+
+            .txtformmob {
+                display: none;
+            }
+        }
+
+        .chestWrapper {
+            cursor: pointer;
         }
     }
 
@@ -56,6 +72,7 @@
     }
 
     .info {
+        cursor: pointer;
         position: absolute;
         left: 103%;
         top: 15%;
@@ -90,6 +107,10 @@
     padding: 35px 55px;
     position: relative;
     width: 972px;
+
+    .bigchestmob {
+        display: none;
+    }
 
     .title {
         font-family: 'GilroyBold';
@@ -127,6 +148,10 @@
         font-size: 23px;
         font-family: 'GilroyRegular';
         margin-top: 23px;
+
+        .infotxtmob {
+            display: none;
+        }
     }
 
     .closebtn {
@@ -149,4 +174,195 @@
 
 .none {
     display: none;
+}
+
+@media (max-width: 1262px) {
+    .slider {
+        .chestWrapper {
+
+            img {
+                width: 250px;
+            }
+        }
+
+        .close {
+
+            img {
+                width: 150px;
+            }
+        }
+
+        .far {
+
+            img {
+                width: 90px;
+            }
+        }
+    }
+}
+
+@media (max-width: 974px) {
+    .slider {
+        justify-content: center;
+        .chestWrapper {
+
+        }
+
+        .close {
+            display: none;
+        }
+
+        .far {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .slider {
+        position: relative;
+        
+        .chestWrapper {
+            img {
+                width: 191px;
+            }
+        }
+
+        .prevb {
+            position: absolute;
+            
+            img {
+                width: 30px;
+            }
+
+            bottom: 0;
+            left: 76px;
+        }
+
+        .nextb {
+            position: absolute;
+
+            img {
+                width: 30px;
+            }
+
+            bottom: 0;
+            right: 76px;
+        }
+
+        .nextmob {
+            display: block;
+        }
+
+        .txtmob {
+            display: inline;
+        }
+
+        .txtdesktop {
+            display: none;
+        }
+
+    }
+
+    .popup {
+        background-image: url('../../assets/images/popupmob.png');
+        background-repeat: no-repeat;
+        padding: 120px 22px 41px;
+        width: 294px;
+
+        .title {
+            font-size: 22px;
+        }
+
+        .txt {
+            font-size: 15px;
+
+            .txtformdesktop {
+                display: none;
+            }
+
+            .txtformmob {
+                display: inline;
+            }
+        }
+
+        table {
+            font-size: 11px;
+        }
+
+        .infotxt {
+            font-size: 12px;
+
+            .infotxtdesktop {
+                display: none;
+            }
+
+            .infotxtmob {
+                display: inline;
+            }
+        }
+
+        .bigchest {
+            display: none;
+        }
+
+        .bigchestmob {
+            display: block;
+            position: absolute;
+            bottom: calc(76%);
+            left: 40px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .slider {
+        .prevb {
+            position: absolute;
+            
+            img {
+                width: 30px;
+            }
+
+            bottom: 0;
+            left: 50px;
+        }
+
+        .nextb {
+            position: absolute;
+
+            img {
+                width: 30px;
+            }
+
+            bottom: 0;
+            right: 50px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .slider {
+        .prevb {
+            position: absolute;
+            
+            img {
+                width: 30px;
+            }
+
+            bottom: 0;
+            left: 25px;
+        }
+
+        .nextb {
+            position: absolute;
+
+            img {
+                width: 30px;
+            }
+
+            bottom: 0;
+            right: 25px;
+        }
+    }
 }

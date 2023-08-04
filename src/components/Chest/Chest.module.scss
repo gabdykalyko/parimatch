@@ -16,3 +16,17 @@
         text-align: center;
     }
 }
+
+@media (max-width: 425px) {
+    .container {
+
+        .title {
+            font-size: 36px;
+            margin-top: 74px;
+        }
+
+        .info {
+            font-size: 16px;
+        }
+    }
+}

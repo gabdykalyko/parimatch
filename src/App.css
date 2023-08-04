@@ -50,3 +50,8 @@ a {
   font-family: 'GilrowSemibold';
   src: url('./assets/fonts/Gilroy-Semibold.ttf');
 }
+
+@font-face {
+  font-family: 'GilrowSemiboldItalic';
+  src: url('./assets/fonts/Gilroy-SemiboldItalic.ttf');
+}

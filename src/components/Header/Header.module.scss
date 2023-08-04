@@ -59,5 +59,63 @@
             transform: skew(160deg, 0);
             width: 130px;
         }
+
+        .btn {
+
+            div {
+                display: none;
+            }
+        }
     }
 }
+
+@media (max-width: 974px) {
+    .header {
+        .nav {
+
+            button {
+                display: none;
+            }
+
+            .btn {
+                display: flex;
+
+                img {
+                    cursor: pointer;
+                }
+
+                div {
+                    display: block;
+                }
+            }
+
+            .btn > div {
+                margin-right: 2px;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .header {
+        .logo {
+            width: 92px;
+        }
+
+        .nav {
+            .lang {
+                margin-right: 13px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        padding: 25px 11px;
+        a {
+            font-size: 16px;
+        }
+    }
+}
+

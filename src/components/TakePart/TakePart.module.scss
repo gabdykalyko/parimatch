@@ -2,6 +2,10 @@
     margin-top: 47px;
     padding-bottom: 53px;
 
+    .con {
+        display: none;
+    }
+
     .button {
         text-align: center;
 
@@ -51,8 +55,9 @@
 
         .title {
             color: #ffffff;
-            font-family: 'GilroyBoldItalic';
+            font-family: 'GilroyboldItalic';
             font-size: 64px;
+            margin-bottom: 36px;
             text-align: center;
         }
     }
@@ -60,4 +65,248 @@
     .none {
         display: none;
     }
+
+    .formRow {
+        display: flex;
+        position: relative;
+    }
+
+    .formWrapper {
+        background-color: #031B22;
+        border: 1px solid #487783;
+        border-radius: 12px;
+
+        .formTitle {
+            color: #BDD5DB;
+            font-family: "GilroyRegular";
+            font-size: 13px;
+        }
+    }
+
+    .error {
+        border: 1px solid #FF3333;
+        background-color: #031B22;
+        border-radius: 12px;
+
+        .formTitle {
+            color: #BDD5DB;
+            font-family: "GilroyRegular";
+            font-size: 13px;
+        }
+    }
+
+    .formWrapperLang {
+        display: flex;
+        padding: 16px;
+        margin-right: 6px;
+    }
+
+    .formWrapperPhone {
+        padding: 9px 16px;
+        position: relative;
+        width: 100%;
+
+        input {
+            background-color: unset;
+            border: none;
+            color: #FAF9F8;
+            font-size: 16px;
+            margin-top: 2px;
+            outline: none;
+
+            &::placeholder {
+                color: #487783;
+            }
+        }
+    }
+    .block {
+        color: #FF3333;
+        font-size: 13px;
+        display: block;
+        position: absolute;
+        bottom: 2px;
+    }
+
+    .formWrapperPass {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+        padding: 18px 16px;
+        width: 100%;
+
+        input {
+            width: 400px;
+
+            &::placeholder {
+                color: #BDD5DB;
+            }
+        }
+    }
+
+    .blockLong {
+        color: #FF3333;
+        font-size: 13px;
+        display: block;
+        position: absolute;
+        top: calc(100% + 8px);
+    }
+
+    .blockLong > div {
+        align-items: center;
+        display: flex;
+    }
+
+    .blockLong > div > div {
+        margin-right: 8px;
+    }
+
+    .blockNum {
+        color: #FF3333;
+        font-size: 13px;
+        display: block;
+        position: absolute;
+        top: calc(100% + 30px);
+    }
+
+    .blockNum > div {
+        align-items: center;
+        display: flex;
+    }
+
+    .blockNum > div > div {
+        margin-right: 8px;
+    }
+
+    .formRowAgree {
+        background-color: #0B4B5D;
+        border-radius: 12px;
+        cursor: pointer;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+        padding: 9px 16px;
+        width: 100%;
+
+        .formRowAgreeTitle {
+            color: #FAF9F8;
+            font-size: 16px;
+        }
+
+        .formRowAgreeTxt {
+            color: #F8FF13;
+            font-size: 13px;
+            margin-top: 2px;
+        }
+
+        .formRowAgreed {
+            background-color: #031B22;            
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 24px;
+            width: 24px;
+        }
+
+        .formRowAgreedTrue {
+            background-color: #F8FF13;
+        }
+    }
+
+    .mb60 {
+        margin-top: 66px;
+    }
+
+    .register {
+        margin-top: 16px;
+
+        button {
+            background-color: #F8FF13;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 18px 0;
+            width: 100%;
+        }
+    }
+
+    .enter {
+        color: #FAF9F8;
+        margin-top: 26px;
+        text-align: center;
+
+        span {
+            color: #F8FF13;
+            cursor: pointer;
+        }
+    }
+
+    .closeForm {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .part {
+
+        .button {
+            button {
+                font-size: 34px;
+            }
+        }   
+
+        .con {
+            display: block;
+            text-align: center;
+            font-size: 17px;
+            color: #FFFFFF;
+            text-decoration: underline;
+            margin-top: 8px;
+        }
+
+        .info {
+            font-size: 14px;
+            margin-top: 21px;
+        }
+    }
+
+    .part {
+        .popup {
+            padding: 22px 12px;
+            width: 284px;
+            
+            .title {
+                font-size: 32px;
+            }
+        }
+
+        .formWrapperPhone {
+            width: 171px;
+        }
+
+        .formWrapperPass {
+            width: 260px;
+        }
+
+        .block {
+            font-size: 6px;
+        }
+
+        .formRowAgreeTitle {
+            font-size: 12px;
+        }
+
+        .formRowAgreeTxt {
+            font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    
 }
